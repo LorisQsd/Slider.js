@@ -1,0 +1,106 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  padding: clamp(20px, 12vw, 120px) 10px 10px;
+}
+
+.container {
+  max-width: 600px;
+  min-height: 525px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgb(29, 29, 29);
+  position: relative;
+  overflow: hidden;
+}
+
+.chevron {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 300ms;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.chevron:hover {
+  transform: scale(1.1);
+}
+
+.left {
+  top: 45%;
+  left: 10%;
+}
+
+.right {
+  top: 45%;
+  right: 10%;
+}
+
+.chevron img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+img {
+  user-select: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card h1 {
+  color: white;
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.card p {
+  color: gray;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.card button {
+  margin-top: 40px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.card button:hover {
+  color: black;
+  background-color: white;
+  transform: scale(1.1);
+}
